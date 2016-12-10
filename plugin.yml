@@ -1,0 +1,58 @@
+name: RestrictoR
+version: 1.3.1
+author: G_3_N_I_S_Y_S
+description: The Main Economy, Permission and Chat-Management-Plugin for WitherCraft
+
+main: de.zbs.restrictor.main.RestrictoR
+
+softdepend: [EffectLib]
+
+commands:
+  restrictor:
+    description: Hauptcommand von RestrictoR
+    aliases: [group, groups, newgroup, user, player, clearchat, removepermissiongroup, removepermissionuser, debug]
+    
+permissions:
+  restrictor.*:
+    description: Allows access to all RestrictoR-Commands
+    children:
+      restrictor.usecolourcodes: true
+      restrictor.info: true
+      restrictor.group: true
+      restrictor.group.edit: true
+      restrictor.user: true
+      restrictor.user.edit: true
+      restrictor.clearchat: true
+      restrictor.newgroup: true
+      restrictor.member: true
+      restrictor.bypasscaps: true
+  restrictor.usecolourcodes:
+    description: Allows you to use colour codes
+    default: op
+  restrictor.info:
+    description: Allows you to see the Information
+    default: op
+  restrictor.group:
+    description: Allows you to see the Groups
+    default: op
+  restrictor.user:
+    description: Allows you to see User-Information
+    default: op
+  restrictor.clearchat:
+    description: Allows you to clear the Chat
+    default: op
+  restrictor.newgroup:
+    description: Allows you to create a new group
+    default: false
+  restrictor.bypasscaps:
+    description: Allows you to chat with Caps
+    default: op
+  restrictor.warn:
+    description: Allows you to see your Warns
+    default: true
+  restrictor.warn.edit:
+    description: Allows you to edit your warns
+    default: op
+  restrictor.joinfullserver:
+    description: Allows you to edit your warns
+    default: op
