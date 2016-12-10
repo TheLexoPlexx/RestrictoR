@@ -1,0 +1,2 @@
+# RestrictoR
+Discontinued Spigot Plugin
